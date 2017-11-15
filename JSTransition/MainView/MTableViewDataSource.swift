@@ -12,18 +12,21 @@ extension MainTableViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return cellsData.count
     }
     
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! JSTableViewCell
         cell.selectionStyle = .none
-        cell.setup(title: titleSets[indexPath.row], imageName: imageSets[indexPath.row], description: descriptionSets[indexPath.row])
+        cell.backgroundColor = .clear
+//        cell.sepe
+        let data = cellsData[indexPath.section]
+        cell.setup(title: data.title, subtitle: data.subtitle, imageName: data.image, description: data.description)
 
         return cell
     }

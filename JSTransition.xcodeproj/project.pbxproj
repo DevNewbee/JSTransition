@@ -13,12 +13,13 @@
 		E81BFC2B1F8DCCC8001B9E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81BFC291F8DCCC8001B9E26 /* LaunchScreen.storyboard */; };
 		E81BFC361F8DCCC8001B9E26 /* CustomTransitionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81BFC351F8DCCC8001B9E26 /* CustomTransitionDemoTests.swift */; };
 		E81BFC411F8DCCC8001B9E26 /* CustomTransitionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81BFC401F8DCCC8001B9E26 /* CustomTransitionDemoUITests.swift */; };
-		E81BFC4F1F8DCCFC001B9E26 /* JSPopupTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81BFC4E1F8DCCFC001B9E26 /* JSPopupTransition.swift */; };
+		E81BFC4F1F8DCCFC001B9E26 /* JSPresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81BFC4E1F8DCCFC001B9E26 /* JSPresentTransition.swift */; };
 		E81BFC511F8DE2DD001B9E26 /* JSPopupNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81BFC501F8DE2DD001B9E26 /* JSPopupNavigationControllerDelegate.swift */; };
 		E81BFC531F8DE389001B9E26 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81BFC521F8DE389001B9E26 /* DestinationViewController.swift */; };
 		E81BFC551F8DF13F001B9E26 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81BFC541F8DF13F001B9E26 /* MainTableViewController.swift */; };
 		E81BFC571F8DF188001B9E26 /* MTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81BFC561F8DF188001B9E26 /* MTableViewDelegate.swift */; };
 		E81BFC591F8DF199001B9E26 /* MTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81BFC581F8DF199001B9E26 /* MTableViewDataSource.swift */; };
+		E86AFE8D1FB9DCC200DD411F /* JSDimissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AFE8C1FB9DCC200DD411F /* JSDimissTransition.swift */; };
 		E8B0310B1FB9697100B100D3 /* JSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B0310A1FB9697100B100D3 /* JSTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +53,13 @@
 		E81BFC3C1F8DCCC8001B9E26 /* JSTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81BFC401F8DCCC8001B9E26 /* CustomTransitionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionDemoUITests.swift; sourceTree = "<group>"; };
 		E81BFC421F8DCCC8001B9E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E81BFC4E1F8DCCFC001B9E26 /* JSPopupTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPopupTransition.swift; sourceTree = "<group>"; };
+		E81BFC4E1F8DCCFC001B9E26 /* JSPresentTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPresentTransition.swift; sourceTree = "<group>"; };
 		E81BFC501F8DE2DD001B9E26 /* JSPopupNavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSPopupNavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		E81BFC521F8DE389001B9E26 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		E81BFC541F8DF13F001B9E26 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		E81BFC561F8DF188001B9E26 /* MTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTableViewDelegate.swift; sourceTree = "<group>"; };
 		E81BFC581F8DF199001B9E26 /* MTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTableViewDataSource.swift; sourceTree = "<group>"; };
+		E86AFE8C1FB9DCC200DD411F /* JSDimissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSDimissTransition.swift; sourceTree = "<group>"; };
 		E8B0310A1FB9697100B100D3 /* JSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,7 +161,8 @@
 		E85D33A71F8E118E00FD02B1 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				E81BFC4E1F8DCCFC001B9E26 /* JSPopupTransition.swift */,
+				E81BFC4E1F8DCCFC001B9E26 /* JSPresentTransition.swift */,
+				E86AFE8C1FB9DCC200DD411F /* JSDimissTransition.swift */,
 				E81BFC501F8DE2DD001B9E26 /* JSPopupNavigationControllerDelegate.swift */,
 			);
 			path = Transition;
@@ -327,8 +330,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B0310B1FB9697100B100D3 /* JSTableViewCell.swift in Sources */,
-				E81BFC4F1F8DCCFC001B9E26 /* JSPopupTransition.swift in Sources */,
+				E81BFC4F1F8DCCFC001B9E26 /* JSPresentTransition.swift in Sources */,
 				E81BFC511F8DE2DD001B9E26 /* JSPopupNavigationControllerDelegate.swift in Sources */,
+				E86AFE8D1FB9DCC200DD411F /* JSDimissTransition.swift in Sources */,
 				E81BFC591F8DF199001B9E26 /* MTableViewDataSource.swift in Sources */,
 				E81BFC211F8DCCC8001B9E26 /* AppDelegate.swift in Sources */,
 				E81BFC551F8DF13F001B9E26 /* MainTableViewController.swift in Sources */,
